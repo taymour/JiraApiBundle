@@ -12,9 +12,9 @@ class SearchService extends AbstractPagedService
 {
     /**
      * Search for issues.
-     * 
+     *
      * @param array $params
-     * 
+     *
      * @return boolean|array
      */
     public function search(array $params = array())
