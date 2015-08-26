@@ -20,10 +20,8 @@ class VersionService extends AbstractService
      */
     public function getAll($projectKey, $expand = array())
     {
-        $parameters = implode(",", $expand);
-
         return $this->performQuery(
-            $this->createUrl(sprintf('%s/versions', $projectKey), $parameters)
+            $this->createUrl(sprintf('project/%s/versions', $projectKey), $expand)
         );
     }
 }
